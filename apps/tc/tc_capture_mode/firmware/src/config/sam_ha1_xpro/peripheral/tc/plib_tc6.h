@@ -102,6 +102,8 @@ uint16_t TC6_Capture16bitChannel1Get( void );
 void TC6_CaptureCallbackRegister(TC_CAPTURE_CALLBACK callback, uintptr_t context);
 
 
+void TC6_CaptureCommandSet(TC_COMMAND command);
+
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
