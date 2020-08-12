@@ -121,6 +121,15 @@ uint32_t TC7_CompareFrequencyGet( void )
     return (uint32_t)(750000UL);
 }
 
+void TC7_CompareCommandSet(TC_COMMAND command)
+{
+    TC7_REGS->COUNT16.TC_CTRLBSET = command << TC_CTRLBSET_CMD_Pos;
+    while((TC7_REGS->COUNT16.TC_STATUS & TC_STATUS_SYNCBUSY_Msk))
+    {
+        /* Wait for Write Synchronization */
+    }    
+}
+
 /* Get the current counter value */
 uint16_t TC7_Compare16bitCounterGet( void )
 {

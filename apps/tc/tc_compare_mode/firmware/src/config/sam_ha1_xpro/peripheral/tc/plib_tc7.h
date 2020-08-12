@@ -110,6 +110,8 @@ void TC7_Compare16bitMatch1Set( uint16_t compareValue );
 
 TC_COMPARE_STATUS TC7_CompareStatusGet( void );
 
+void TC7_CompareCommandSet(TC_COMMAND command);
+
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
