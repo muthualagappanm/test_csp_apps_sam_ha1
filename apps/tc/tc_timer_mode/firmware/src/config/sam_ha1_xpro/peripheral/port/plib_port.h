@@ -65,18 +65,14 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for LED pin ***/
 #define LED_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 0)
 #define LED_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 0)
 #define LED_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 0)
-#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 0)) & 0x01)
 #define LED_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 0)
 #define LED_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 0)
+#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 0)) & 0x01)
 #define LED_PIN                  PORT_PIN_PA00
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -220,6 +216,15 @@ typedef enum
 
     /* PB17 pin */
     PORT_PIN_PB17 = 49,
+
+    /* PB22 pin */
+    PORT_PIN_PB22 = 54,
+
+    /* PB23 pin */
+    PORT_PIN_PB23 = 55,
+
+    /* PB30 pin */
+    PORT_PIN_PB30 = 62,
 
     /* This element should not be used in any of the PORT APIs.
      * It will be used by other modules or application to denote that none of
@@ -823,7 +828,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -862,7 +867,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
