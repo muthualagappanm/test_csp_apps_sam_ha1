@@ -65,9 +65,9 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
-
-
+/*** Macros for EIC_EXTINT3 pin ***/
+#define EIC_EXTINT3_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 3)) & 0x01)
+#define EIC_EXTINT3_PIN                  PORT_PIN_PB03
 // *****************************************************************************
 /* PORT Group
 
@@ -211,6 +211,15 @@ typedef enum
 
     /* PB17 pin */
     PORT_PIN_PB17 = 49,
+
+    /* PB22 pin */
+    PORT_PIN_PB22 = 54,
+
+    /* PB23 pin */
+    PORT_PIN_PB23 = 55,
+
+    /* PB30 pin */
+    PORT_PIN_PB30 = 62,
 
     /* This element should not be used in any of the PORT APIs.
      * It will be used by other modules or application to denote that none of
@@ -814,7 +823,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -853,7 +862,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
