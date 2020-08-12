@@ -38,6 +38,9 @@ The following table shows the target hardware for the application projects.
 - Plug the [EEPROM 3 click Board](https://www.mikroe.com/eeprom-3-click) into the MikroBus socket of the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
+### Note:
+*ATSAMHA1G16A device in SAM HA1G16A Xplained Pro board is not recommended for new design, hence replace the device with ATSAMHA1G16AB device. Connect the supported external debugger to Cortex Debug Port*
+
 ## Running the Application
 
 1. Build and Program the application using its IDE
@@ -48,6 +51,6 @@ The following table shows the target hardware for the application projects.
 The following table provides the LED name:
 
 | Board      | LED Name |
-| ---------- | ---------------- |--------- |
+| ---------- | ---------|
 | [SAM HA1G16A Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMHA1G16A-XPRO) | LED0 |
 |||
