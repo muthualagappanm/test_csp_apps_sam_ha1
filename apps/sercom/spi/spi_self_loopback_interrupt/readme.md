@@ -37,6 +37,9 @@ The following table shows the target hardware for the application projects.
 - Use a jumper wire to short pin 16 and pin 17 of the EXT1 header
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
+### Note:
+*ATSAMHA1G16A device in SAM HA1G16A Xplained Pro board is not recommended for new design, hence replace the device with ATSAMHA1G16AB device. Connect the supported external debugger to Cortex Debug Port*
+
 ## Running the Application
 
 1. Build and Program the application project using its IDE
@@ -48,6 +51,6 @@ The following table shows the target hardware for the application projects.
 Following table provides the LED name:
 
 | Board      | LED Name |
-| ---------- | ---------------- |--------- |
+| ---------- | ---------|
 | [SAM HA1G16A Xplained Pro](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMHA1G16A-XPRO) | LED0 |
 |||
