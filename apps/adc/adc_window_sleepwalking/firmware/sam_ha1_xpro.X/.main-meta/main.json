@@ -2,7 +2,7 @@
 	"metaDataVersion": "1.0.0",
 	"category": "com.microchip.ide.project",
 	"content": {
-		"metaDataVersion": "1.1.0",
+		"metaDataVersion": "0.99.0",
 		"name": "com.microchip.mcu32.mplabx.project.csp_apps_sam_ha1_adc_window_sleepwalking",
 		"version": "3.1.0",
 		"displayName": "ADC window sleepwalking Example for SAM HAx Family",
