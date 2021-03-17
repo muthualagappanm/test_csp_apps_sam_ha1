@@ -1,9 +1,4 @@
----
-parent: Harmony 3 peripheral library application examples for SAM HA1 family
-title: ADC window sleepwalking 
-has_children: false
-has_toc: false
----
+--- ---
 
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
